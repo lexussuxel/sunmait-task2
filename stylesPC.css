@@ -47,7 +47,7 @@ p.headertext::after{
     display: none;
 }
 .content{
-    padding-top: 60px;
+    padding-top: calc(5vh + 60px);
 }
 
 .items-wrapper{
