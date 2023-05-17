@@ -1,0 +1,104 @@
+html, body{
+    height: 100%;
+    font-family: Open Sans,sans-serif;
+}
+body{
+    margin: 0;
+    background-color: #ebf2f2;
+}
+
+.header{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 5vh;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.header div{
+    column-gap: 15px;
+}
+
+body  *{
+    display: flex;
+}
+
+svg{
+    margin: auto 0;
+    fill: rgb(46, 165, 3);
+    height: 80%;
+}
+
+svg > path{
+    fill: white;
+}
+.wrapper-text{
+    display:none;
+}
+
+
+.burger{
+
+}
+.dropdown{
+    display: none;
+}
+
+.content{
+    flex-direction: column;
+    padding-bottom: 80px;
+    background-color: white;
+}
+
+.content h1{
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+.content span{
+    font-size: 24px;
+    max-width: 960px;
+}
+
+
+.items-wrapper{
+    padding: 20px 10px;
+    row-gap: 20px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item{
+    border-radius: 5px;
+    border: 1px solid #d9e9e9;
+    column-gap: 10px;
+    padding:30px 20px;
+    background-color: white;
+    box-sizing: border-box;
+    width: calc(50% - 10px);
+    cursor: pointer;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px 0 rgba(108,135,135,.2);
+}
+
+.item img{
+    width: 15%;
+    height: min-content;
+}
+
+.item h3{
+    font-size: 28px;
+    margin:0 0 10px 0; 
+}
+.item p{
+    font-size: 18px;
+}
+.item > div{
+    flex-direction: column;
+}

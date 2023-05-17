@@ -1,0 +1,16 @@
+.base-padding{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content h1{
+    font-size: 40px;
+}
+
+.content span{
+    font-size: 20px;
+}
+
+.item{
+    width: 100%;
+}
