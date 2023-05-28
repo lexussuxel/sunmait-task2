@@ -21,8 +21,27 @@ body{
     background-color: white;
 }
 
-.header div{
-    column-gap: 15px;
+.content-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(44, 44, 44);
+    padding: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+    flex-direction: column;
+}
+.content-header img{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.none{
+    top: -101vh;
 }
 
 body  *{
@@ -38,16 +57,41 @@ svg{
 svg > path{
     fill: white;
 }
-.wrapper-text{
-    display:none;
+input{
+    margin:10px auto;
 }
 
+.wrapper-text{
+    color:white;
+    display: flex;
+    flex-direction: column;
+}
+p.headertext::after{
+    content:"^";
+    margin: auto 0;
+    margin-left: 5px;
+    transform: rotate(180deg) ;
+}
+.headertext:hover{
+    color:rgb(46, 165, 3);
+}
+p.headertext{
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px solid white;
+    cursor: pointer;
 
+}
+.headertext:hover ~ div{
+    color:#98afae;
+}
 .burger{
     height: -webkit-fill-available;
 }
 .dropdown{
     display: none;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .content{
@@ -105,4 +149,16 @@ svg > path{
 }
 .item > div{
     flex-direction: column;
+}
+
+.flex-cont{
+    display: flex;
+}
+
+.flex-cont  div {
+    flex-grow: 1;
+}
+
+.flex-i{
+    flex-basis: 100px;
 }

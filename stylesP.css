@@ -14,3 +14,7 @@
 .item{
     width: 100%;
 }
+
+.open{
+    display: flex;
+}
