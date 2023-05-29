@@ -1,20 +1,20 @@
-.base-padding{
-    padding-left: 10px;
-    padding-right: 10px;
+.base-padding {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.content h1{
-    font-size: 40px;
+.content h1 {
+  font-size: 40px;
 }
 
-.content span{
-    font-size: 20px;
+.content span {
+  font-size: 20px;
 }
 
-.item{
-    width: 100%;
+.item {
+  width: 100%;
 }
 
-.open{
-    display: flex;
+.open {
+  display: flex;
 }
