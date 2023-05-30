@@ -1,59 +1,80 @@
-
-.base-padding{
-    padding-left: 10vw;
-    padding-right: 10vw;
+.base-padding {
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
-.wrapper-text{
-    display: flex;
+.wrapper-text {
+  display: flex;
 }
-p.headertext{
-    font-weight: 600;
-
-}
-p.headertext::after{
-    content:"^";
-    margin: auto 0;
-    margin-left: 5px;
-    transform: rotate(180deg) ;
-}
-.dropdown{
-    position: absolute;
-    top: 80%;
-    background-color: white;
-    flex-direction: column;
-    border-radius: 8px;
-    padding: 15px;
-    row-gap: 10px;
-    box-shadow: 0 5px 30px 0 rgba(108,135,135,.5);
-   
-}
-.dropdown > p{
-    margin: 0;
-    cursor: pointer;
-}
-.dropdown > p:hover{
-    margin: 0;
-    color: rgb(46, 165, 3);
-}
-.wrapper-text:hover  .dropdown{
-    display: flex;
+p.headertext {
+  font-size: inherit;
+  font-weight: 600;
+  border: none;
 }
 
-.dropdown:hover{
-    display: flex;
+p.headertext:hover {
+  color: black;
+}
+p.headertext:hover ~ div {
+  color: black;
+}
+.dropdown {
+  position: absolute;
+  top: 80%;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 15px;
+  row-gap: 10px;
+  box-shadow: 0 5px 30px 0 rgba(108, 135, 135, 0.5);
 }
 
-.burger{
-    display: none;
+.dropdown > p {
+  margin: 0;
+  cursor: pointer;
 }
-.content{
-    padding-top: calc(5vh + 60px);
+.dropdown > p:hover {
+  margin: 0;
+  color: rgb(46, 165, 3);
 }
 
-.items-wrapper{
-    padding-left:  15vw;
-    padding-right:  15vw;
- 
+.wrapper-text:hover .dropdown {
+  display: flex;
 }
-.item{
+
+.dropdown:hover {
+  display: flex;
+}
+
+.burger {
+  display: none;
+}
+.content {
+  padding-top: calc(5vh + 60px);
+}
+
+.items-wrapper {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.content-header {
+  column-gap: 15px;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  padding: 0;
+  background-color: transparent;
+  position: static;
+  justify-content: flex-end;
+  align-items: center;
+}
+.content-header img {
+  display: none;
+}
+
+.wrapper-text {
+  color: black;
+}
+.none {
+  display: flex;
 }
